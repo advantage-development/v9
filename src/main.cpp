@@ -74,9 +74,9 @@ int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
  * Fees are currently tallied by SatoshisPerK, meaning X Satoshis per Kilobyte. (satoshis per 1000 bytes)
- 	Currently fee rate is == minRelayTxFee = CFeeRate (100000000 satoshis flat per kilobyte)
+ 	Currently fee rate is == minRelayTxFee = CFeeRate (10000 satoshis flat per kilobyte)
  */
-CFeeRate minRelayTxFee = CFeeRate(100000000);
+CFeeRate minRelayTxFee = CFeeRate(10000);
 
 CTxMemPool mempool(::minRelayTxFee);
 
