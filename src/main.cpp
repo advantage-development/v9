@@ -1617,7 +1617,6 @@ int64_t GetBlockValue(int nHeight)
 
     if (nHeight == 1) {
         nSubsidy = 250000 * CREDIT;
-	}
     } else if (nHeight < 1501) {
         nSubsidy = 0 * CREDIT;
     } else if (nHeight < 10000) {
@@ -1660,7 +1659,7 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 30 * CREDIT;
     } else {
         nSubsidy = 0;
-    }*/
+    }
 	
     return nSubsidy;
 
